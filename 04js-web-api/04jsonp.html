@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>jsonp 演示</title>
+</head>
+
+<body>
+    <p>一段文字 1</p>
+
+    <script>
+        // Failed to load resource: net:: ERR_CONNECTION_REFUSED
+        // 端口号
+        // 尝试node 允许服务器运行此代码
+        window.abc = function (data) {
+            console.log(data)
+        }
+    </script>
+    <script src="http://localhost:8080/jsonp.js?username=xxx&callback=abc"></script>
+</body>
+
+</html>
